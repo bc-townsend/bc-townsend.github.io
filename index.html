@@ -1,54 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brandon Townsend</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandon Townsend</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="portfolio-style.css">
 </head>
-<body>
-    <div id="navbar">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Projects</a>
-                <a class="nav-link" href="#">Contact Me</a>
-              </div>
-            </div>
-          </nav>
-    </div>
-    <div id="home">
-        
-    </div>
-    <div id="in-progress" class="jumbotron jumbotron-fluid">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">Unfortunately, this webpage portfolio for Brandon Townsend is not yet ready to be viewed by the public.</p>
-    </div>
-
-    <form>
-      <div class="form-group">
-        <label for="inputEmail">Email</label>
-        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="username@email.com">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-      <div class="mb-3">
-        <label for="inputTextArea">Textarea</label>
-        <textarea class="form-control is-invalid" id="inputTextArea" placeholder="Required example textarea" required></textarea>
-        <div class="invalid-feedback">
-          Please enter a message in the textarea.
+<body class="bg-dark">
+  <div id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact-me">Contact Me</a>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </nav>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <div id="home">
+    <div class="video-background-holder">
+      <div class="video-background-overlay"></div>
+      <video playsinline autoplay muted loop>
+            <source src="assets/home-background.mp4" type="video/mp4">
+        </video>
+      <div class="video-background-content container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-4">Brandon Townsend</h1>
+            <p class="lead mb-3">Full Stack Developer</p>
+            <form method="get" action="./assets/brandon_townsend.png">
+              <button type="submit" class="btn-lg btn-outline-light">R&eacute;sum&eacute;</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="bg-about text-light">
+    <div class="row">
+      <div class="col-4">
+        <img src="./assets/brandon_townsend.png" class="img-fluid" alt="Photo of Brandon Townsend">
+      </div>
+      <div class="col-md-6 mt-5">
+        <h1 class="display-4">About Me</h1>
+        <hr style="border-color:antiquewhite"/>
+        <p>Hi, I'm Brandon Townsend. I'm a full stack Java developer currently completing training through Cognixia's JUMP Program. I'm a Western Carolina University alumni and I graduated with two degrees: A BS in Computer Science and a BS in Applied Mathematics.</p>
+        <p>I play games, read, and spend time with my family and friends in my free time. I absolutely love learning about machine learning, especially on the topic of genetic algorithms. I also love animals and have a passion for learning all I can about their behavior and protecting their natural habitats.
+        </p>
+        <p>I'm also currently seeking job opportunities in the world of software development, so feel free to contact me below if you have something that I might be interested in or download my r&eacute;sum&eacute; above. Have a great one and thanks for stopping by!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="projects" class="justify-content-md-center container-fluid mt-3">
+    <div>
+      <h1 class="display-5 text-center text-light">Projects</h1>
+      <hr style="border-color:antiquewhite"/>
+    </div>
+    <div class="card-deck">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NEAT Algorithm with 'Frogger'</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Full Stack Library Implementation</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ant Colony Optimization in Real Time</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+      </div>
+    </div>
+    <hr style="border-color:antiquewhite"/>
+  </div>
+
+  <div id="contact-me" class="text-light">
+    <div class="mb-3 col">
+      <h1 class="display-6">Contact Me</h1>
+    </div>
+    <form name="contact_form" id="contact_form">
+      <div class="form-group col-3 mt-3">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control bg-dark text-light" id="inputEmail" placeholder="username@email.com" required>
+      </div>
+
+      <div class="mb-3 col-5">
+        <label for="textArea">Message</label>
+        <textarea class="form-control bg-dark text-light" id="textArea" placeholder="Your message" required></textarea>
+      </div>
+
+      <div class="mb-3 ml-3">
+        <button type="submit" class="btn btn-info">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
