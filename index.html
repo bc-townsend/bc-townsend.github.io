@@ -25,27 +25,19 @@
     </nav>
   </div>
 
-  <div id="home">
-    <div class="video-background-holder">
-      <div class="video-background-overlay"></div>
-      <video playsinline autoplay [muted]="true" loop>
-            <source src="assets/home-background.mp4" type="video/mp4">
-        </video>
-      <div class="video-background-content container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100 text-white">
-            <h1 class="display-4">Brandon Townsend</h1>
-            <p class="lead mb-3">Full Stack Developer</p>
-            <form method="get" action="./assets/bctownsend-resume.pdf">
-              <button type="submit" class="btn-lg btn-outline-light">R&eacute;sum&eacute;</button>
-            </form>
-          </div>
-        </div>
+  <div id="home" class="bg-home container-fluid" style="height: 800px;">
+    <div id="particles-js" class="text-light">
+      <div class="panel text-center">
+        <h1 class="display-4">Brandon Townsend</h1>
+        <p class="lead mb-3">Full Stack Developer</p>
+        <form method="get" action="./assets/bctownsend-resume.pdf">
+          <button type="submit" class="btn-lg btn-outline-light">R&eacute;sum&eacute;</button>
+        </form>
       </div>
     </div>
   </div>
 
-  <div id="about" class="bg-about text-light">
+  <div id="about" class="bg-about text-light container-fluid">
     <div class="row">
       <div class="col-4">
         <img src="./assets/brandon_townsend.png" class="img-fluid" alt="Photo of Brandon Townsend">
@@ -168,7 +160,7 @@
     <hr style="border-color:antiquewhite"/>
   </div>
 
-  <div id="contact-me" class="text-light"">
+  <div id="contact-me" class="bg-contact text-light container-fluid">
     <div class="mb-3 col">
       <h1 class="display-6">Contact Me</h1>
     </div>
@@ -189,6 +181,8 @@
     </form>
   </div>
 
+  <script type="text/javascript" src="js/particles.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
